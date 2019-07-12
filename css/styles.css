@@ -1270,8 +1270,8 @@ body {
     height: 70px;
     width: 70px;
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 80% 60%;
+    background-size: 80%;
+    background-position: 90%;
     opacity: .6;
     position: absolute;
     top: 90%;
