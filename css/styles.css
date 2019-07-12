@@ -732,6 +732,9 @@ body {
   height: 100vh;
   background-image: url(../img/worksBg.png);
   background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 2% 0;
   color: #fff; }
   @media (max-width: 1024px) {
     .works {

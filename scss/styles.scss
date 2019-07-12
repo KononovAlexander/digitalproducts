@@ -342,12 +342,7 @@ body{
         	color:#fff;
         }
 	}
-	// &__skills{
-	// 	@media (max-width: 640px) { 
-	// 		height: 45rem;
-	// 	}
-			
-	// }
+	
 
 	&__block{
 		color:#665f60;
@@ -440,9 +435,9 @@ body{
 	height: 100vh;
 	background-image: url(../img/worksBg.png);
 	background-size: contain;
-	// background-repeat: no-repeat;
-	// text-align: center;
-	// padding: 2% 0;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding: 2% 0;
 	color:#fff;
 	@media (max-width: 1024px) { 
 		height: 80vh;
