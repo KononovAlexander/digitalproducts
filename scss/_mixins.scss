@@ -1,0 +1,21 @@
+
+
+@mixin tr($property, $time: .5s) {
+	transition: $property $time linear;
+}
+
+@mixin my_pos($top: 50%, $left: 50%, $tx: -50%, $ty: -50%) {
+	position: absolute;
+	top: $top;
+	left: $left;
+	transform: translate($tx, $ty);
+}
+@mixin btn{
+	display: inline-block;
+	padding:  5px 10px;
+	text-decoration: none;
+	border:1px solid;
+	color:#000;
+	background-color: #fff;
+
+}
