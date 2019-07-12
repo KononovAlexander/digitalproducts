@@ -731,7 +731,7 @@ body {
   width: 100%;
   height: 100vh;
   background-image: url(../img/worksBg.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
   padding: 2% 0;
