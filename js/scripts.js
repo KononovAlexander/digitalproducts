@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('.works__slider').slick({
+	$('.slider').slick({
 		infinite: true,
 		 slidesToShow: 1,
         slidesToScroll: 1,
@@ -8,6 +8,26 @@ $(document).ready(function(){
         nextArrow: '<li class="box__arrow box__arrow--right "></li>' ,
         dots: true,
         autoplay: false,
+         responsive: [
+    {
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 414,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    }]
+
 
 	});
 
@@ -22,14 +42,33 @@ $(document).ready(function(){
         autoplay: false,
          responsive: [
     {
-      breakpoint: 1025,
+      breakpoint: 1024,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
         infinite: true,
         dots: false
       }
-    }]
+    }, {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+         infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+         infinite: true,
+        dots: false
+      }
+    }
+
+    ]
 	});
     
 
