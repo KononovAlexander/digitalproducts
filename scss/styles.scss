@@ -23,10 +23,6 @@ src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0
 $novaBold:Nova700;
 $novaNorm:Nova400;
 $novaThin:Nova300;
-
-
-
-
 *{
 	box-sizing: border-box;}
 html{
@@ -34,29 +30,34 @@ html{
 	height: 100%;
 }
 body{
-	// font-family:
-	font-size: 1.8rem;
 
-	// color:
+	font-size: 1.8rem;
 	min-height: 100%;
 }
-.head{
-	width: 100%;
-	height: 100vh;
-	background-image: url(../img/headerBg.png);
-	background-repeat: no-repeat;
-     background-size: cover;
-     text-align: center;
-     color:#fff;
-
-
-	&__logo{
-
+	.logo{  
+		    width: 70px;
+			height: 70px;
+			margin: 0 auto;
+			background-repeat: no-repeat;
+		    background-size:contain;
+		    background-position:center ;
+		   @media (max-width: 1400px) {
+			height: 50px;
+			width: 50px;
+		}
+			@media (max-width: 1024px) {
+			height: 40px;
+			width: 40px;
+		}
+			@media (max-width: 640px) { 
+			height: 40px;
+			width: 40px;
+		}
+	&__head{
 		background-image: url(../img/logo.svg);
 		background-size: cover;
+		background-position:0 0 ;
 		background-repeat: no-repeat;
-		height: 70px;
-		width: 70px;
 		margin: 1% 3%;
 		 @media (max-width: 640px) { 
               height: 50px;
@@ -66,6 +67,80 @@ body{
 		 	 margin: 1%;
 		 	  }
 	}
+	&__about{
+		height: 20%;
+		width: 25%;
+		background-image: url(../img/AboutUs.png);	
+		margin: 20% auto;
+       
+    }
+	&__works{
+		background-image: url(../img/works.png);
+	}
+	&__ourTeam{		   
+			background-image: url(../img/team.png);	
+	}
+	&__contacts{
+			background-image: url(../img/getintch.png);
+			@include my_pos(10%,50%);
+			z-index: 1; 
+	}
+	&__service{
+		height: 20%;
+		width: 20%;
+		margin: 10% auto;
+
+		      @media (max-width: 414px) {
+		       	height: 70%;
+		    	width: 15%;
+                margin: 0;
+                float:left;
+          }
+		&--services{
+
+			background-image: url(../img/Services.png);
+			
+		    @media (max-width: 640px) { 
+		    	height: 30%;
+		    	width: 30%;
+		    	margin: 15% auto 0;
+		    }
+		     @media (max-width: 414px) {
+		     	height: 40%;
+		    	width: 30%;
+		    	margin: 0 auto 0;
+                float:left;
+		     }
+          }
+	   &--graphic{
+			background-image: url(../img/graphic.png);
+		   
+		}
+		&--web{
+			background-image: url(../img/web.png);
+
+		}
+		&--seo{
+
+			background-image: url(../img/seo.png);
+
+		}
+		&--mobile{
+			background-image: url(../img/mobile.png);
+		}
+		
+		}
+  }
+
+
+.head{
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/headerBg.png);
+	background-repeat: no-repeat;
+     background-size: cover;
+     text-align: center;
+     color:#fff;
 	&__nav{
 		display: flex;
 		width: 70%;
@@ -75,11 +150,9 @@ body{
          justify-content: space-between;
           @media (max-width: 640px) { 
            align-items: flex-start;
-          }      
-         
+          }             
         }
 	&__navlist{
-
 		text-transform: uppercase;
 		list-style: none;
         padding: 0;
@@ -101,9 +174,6 @@ body{
          @media (max-width: 640px) { 
            width: 70%;
          }
-       
-      
-
         & li{
         	display: inline-block;
         	margin: 0 2%;
@@ -130,14 +200,11 @@ body{
              @media (max-width: 414px) {
           	padding: 4% 1%;
           }
-
-
         }
         & a{
         	text-decoration: none;
         	color:inherit;
         }
-
 	}
 	& h1{
 		text-transform: uppercase;
@@ -192,13 +259,12 @@ body{
                     font-size: 2rem;
 		            margin-top: 5%;
 
-                  }
+                }
 	}
 }
 
 .about{
 	width: 100%;
-
 	margin-left:0;
 	margin-right: 0;
 	padding: 0;
@@ -210,7 +276,6 @@ body{
 	&__us{
 		width: 100%;
 		height: 80vh;
-		// padding: 9% 0 0 0 ;
 		text-align: center;
 
 		@media (max-width: 1400px) {
@@ -240,7 +305,6 @@ body{
 		@media (max-width: 640px) { 
 		width: 33%;
 		float:left;
-
 		}
 		   @media (max-width: 414px) {
             width: 40%;
@@ -259,104 +323,7 @@ body{
 				@media (max-width: 640px) { 
 					font-size: 1.4rem;
 					margin:0;
-
 				}
-		}
-	}
-
-	&__logo{
-		height: 20%;
-		width: 25%;
-		background-image: url(../img/AboutUs.png);
-		background-repeat: no-repeat;
-		background-size:contain;
-		background-position:center ;
-		background-color: inherit;
-		margin: 20% auto;
-		@media (max-width: 640px) { 
-        height: 30%;
-        width:  40%;
-
-		}
-		color:#fff;
-		&--graphic{
-		height: 20%;
-		width: 15%;
-		margin: 10% auto;
-			background-image: url(../img/graphic.png);
-			background-repeat: no-repeat;
-		    background-size:contain;
-		    background-position: center;
-		         @media (max-width: 414px) {
-		       	height: 40%;
-		    	width: 40%;
-                margin: 0;
-                float:left;
-          }
-		}
-		&--web{
-		height: 20%;
-		width: 15%;
-		margin: 10% auto;
-			background-image: url(../img/web.png);
-			background-repeat: no-repeat;
-		    background-size:contain;
-		    background-position: center;
-		         @media (max-width: 414px) {
-		       	height: 40%;
-		    	width: 40%;
-                margin: 0;
-                float:left;
-          }
-		}
-		&--seo{
-		height: 20%;
-		width: 15%;
-		margin: 10% auto;
-			background-image: url(../img/seo.png);
-			background-repeat: no-repeat;
-		    background-size:contain;
-		    background-position: center;
-		         @media (max-width: 414px) {
-		       	height: 40%;
-		    	width: 40%;
-                margin: 0;
-                float:left;
-          }
-		}
-		&--mobile{
-		height: 20%;
-		width: 15%;
-		margin: 10% auto;
-			background-image: url(../img/mobile.png);
-			background-repeat: no-repeat;
-		    background-size:contain;
-		    background-position: center;
-		         @media (max-width: 414px) {
-		       	height: 40%;
-		    	width: 40%;
-                margin: 0;
-                float:left;
-          }
-		}
-		&--services{
-		height: 20%;
-		width: 20%;
-		margin: 10% auto;
-			background-image: url(../img/Services.png);
-			background-repeat: no-repeat;
-		    background-size:contain;
-		    @media (max-width: 640px) { 
-		    	height: 30%;
-		    	width: 30%;
-		    	margin: 15% auto 0;
-		    }
-		       @media (max-width: 414px) {
-		       	height: 40%;
-		    	width: 40%;
-                margin: 0;
-                float:left;
-          }
 		}
 	}
 
@@ -408,7 +375,6 @@ body{
           }
 
 		& a{
-
 		padding: 5% 25%;		
         color:inherit;	
         font-size: 2rem;
@@ -473,7 +439,6 @@ body{
 				 @media (max-width: 414px) {
 				  	// float:right;
 				  }
-
 		}
 		& span{
 			font-family:$sans;
@@ -481,7 +446,6 @@ body{
 			@media (max-width: 640px) { 
 				font-size: 1.6rem;
 				}
-
 		}
 
 	&--graphic{
@@ -556,8 +520,6 @@ body{
 	  }
 	}
 }
-
-
 .works{
 	// position: relative;
 	width: 100%;
@@ -587,30 +549,6 @@ body{
      	margin-top: 10vh;
      }
 
-
-
-	&__logo{ 
-		background-image: url(../img/works.png);
-		background-repeat: no-repeat;
-		background-position: center;
-        background-size: contain;
-		height: 70px;
-		width: 70px;
-		margin: 0 auto;
-		@media (max-width: 1400px) {
-			height: 50px;
-			width: 50px;
-		} 
-		@media (max-width: 1024px) {
-			height: 40px;
-			width: 40px;
-		}
-
-		@media (max-width: 640px) { 
-			height: 30px;
-			width: 30px;
-		}
-	}
 	& h2{
 		text-transform: uppercase;
 		font-family:$novaNorm ;
@@ -845,8 +783,6 @@ body{
 	// end news slider
 
 	.ourTeam{
-		// position: relative;
-
 		width: 100%;
 		height: 100vh;
 		text-align: center;
@@ -873,20 +809,6 @@ body{
 		 	height: 65vh;
 		 }
 			
-		&__logo{
-			width: 70px;
-			height: 70px;
-			background-image: url(../img/team.png);
-			background-repeat: no-repeat;
-			background-size: contain;
-			background-position: center;
-			margin: 0 auto;
-
-			@media (max-width: 640px) { 
-				height: 30px;
-				width: 30px;
-			}
-		}
 		& h2{
 			text-transform: uppercase;
 			color:#665f60;
@@ -920,7 +842,6 @@ body{
 			
 		}
 		&__slide{
-			// outline: 1px green solid;
 			position: relative;
 			height: 100%;
 			margin-top:45%; 
@@ -944,7 +865,7 @@ body{
 				@media (max-width: 640px) { 
 					height: 8em;
 					width: 8em;
-				}
+			}
 			}
 			& h3{
 				font-size: 3rem;
@@ -961,7 +882,6 @@ body{
 			& span{
 				font-family:$sans ;
 				font-style: italic;
-				// margin: 5% 0;
 				font-size:2.5rem ;
 					@media (max-width: 1400px) {
 						font-size: 2rem;
@@ -981,12 +901,21 @@ body{
 			background-color: #9f9acf;
 			padding: 4% 0;
 			margin-bottom:0;
+			& a{
+				outline: none;
+				text-decoration: none;
+			}
 			& li{
-				// outline: 1px blue solid;
 				display: inline-block;
 				height:40px;
 				width: 40px;
                 margin: 0 2%;
+                @include tr(.1s);
+                &:hover,
+                &:focus,
+                &:active{
+                	transform:scale(1.5);
+                }
                 @media (max-width: 1400px) {
                 	height: 30px;
                 	width: 30px;
@@ -1071,21 +1000,6 @@ body{
 			height: 90vh;
 		}
 			
-		&__logo{
-
-			height: 70px;
-			width: 70px;
-			background-image: url(../img/getintch.png);
-			background-repeat: no-repeat;
-			background-position:center;
-			background-size: contain;
-			@include my_pos(10%,50%);
-			z-index: 1;
-			@media (max-width: 640px) { 
-				height: 40px;
-				width: 40px;
-			}
-		}
 		& h2{
 			text-transform: uppercase;
 			font-size: 4rem;
@@ -1104,6 +1018,9 @@ body{
 
 	}
 			&__info{
+				& input{
+					padding: 0 2%;
+				}
 
 				width: 55%;
 				height: 50%;
@@ -1154,10 +1071,8 @@ body{
 				height: 60%;
 				width: 100%;
 				margin: 2% 0;
-				opacity: .6;
-                
+				opacity: .6;                
 				border:none;
-				// clear:both;
 			}
 			&__send{
 				width: 30%;
@@ -1170,7 +1085,6 @@ body{
 
 				@media (max-width: 1024px) {
 				margin: 5% 35% 0;
-
 				}
 				@media (max-width: 640px) { 
 					font-size: 1.5rem;
@@ -1183,8 +1097,6 @@ body{
 					opacity: .4;
 					color:#9f9acf;
 				}
-                
-
 			}
 			&__sliderBox{
 				position: relative;
@@ -1213,7 +1125,7 @@ body{
                       width: 300px;
                       height: 70px;
 											
-					}
+					  }
 					  @media (max-width: 640px) { 
 					 transform:translateX(37px);
 					 width: 250px;
@@ -1241,10 +1153,8 @@ body{
                     @media (max-width: 414px) {
 					 transform: translateX(-135px);                     					
 
-                    } 
-
-
-					 }
+                     } 
+					}
 				&--address{
 						position: absolute;
 					top: 50%;
@@ -1259,8 +1169,7 @@ body{
 						text-align: left;
                          margin: 0 1%;
                          font-size: 1.3rem;
-					} 
-
+					 } 
        				}
        				@media (max-width: 768px) {
 						top:35%;					
@@ -1306,8 +1215,6 @@ body{
 					 left:88%;
 					}
 				}
-			
-
 			}
 			&__contact{
 
@@ -1442,8 +1349,11 @@ body{
 		&__social{
 			display: inline-block;
 			margin: 0 2%;
-			& img{
- 
+			@include tr(.1s);
+			&:hover{
+				transform:scale(1.2);
+			}
+			& img{ 
 			@media (max-width: 640px) {
 			width:  30px;
 			height: 30px;
@@ -1451,11 +1361,9 @@ body{
 			 @media (max-width: 414px) {
 			 	width: 35px;
 			 	height: 35px;
-                 
 			 }
-		}
-			
-		}
+		}			
+	  }
 	}
 
 	
