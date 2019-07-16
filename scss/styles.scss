@@ -570,7 +570,7 @@ body{
 	&__slider{
 
 		margin: 0 auto;
-		width: 65%;
+		width: 60%;
 		height: 60%;
 		padding: 0;
 
@@ -593,7 +593,7 @@ body{
 	&__slide{
 		& img{
 			height: 75rem;
-			width:110rem;	
+			width:100rem;	
 			@media (max-width: 1400px) {
 
 			height: 50rem;	
@@ -620,7 +620,7 @@ body{
 		margin: 12% auto;
 		@include tr(.1s);
 		@media (max-width: 1400px) {
-			height: 6%;
+	         width:15%;
 			margin: 9% auto 0;
 		}
 		@media (max-width: 1024px) { 
@@ -649,8 +649,14 @@ body{
 			font-style: italic;
 		    @include tr(.1s);
 			& span{
-				line-height: 4rem;
-		vertical-align: middle;
+				font-size: 2.5rem;
+				line-height: 5rem;
+		        vertical-align: middle;
+		        @media (max-width: 1300px) {
+                    font-size: 2rem;
+                    // line-height: 4rem;
+
+		        }
 		@media (max-width: 640px) {
 					line-height:2rem ;
 					}
@@ -901,10 +907,7 @@ body{
 			background-color: #9f9acf;
 			padding: 4% 0;
 			margin-bottom:0;
-			& a{
-				outline: none;
-				text-decoration: none;
-			}
+			
 			& li{
 				display: inline-block;
 				height:40px;
@@ -930,6 +933,10 @@ body{
 					height:140%;
 					margin: 0 auto;
 				}
+				& a{
+				outline: none;
+				text-decoration: none;
+			    }
 			}
 		}
 
@@ -1018,7 +1025,7 @@ body{
 
 	}
 			&__info{
-				& input{
+				& input {
 					padding: 0 2%;
 				}
 
@@ -1068,6 +1075,7 @@ body{
 			&__message{
 				font-family:$sans ;
 				font-style: italic;
+				padding:  2%;
 				height: 60%;
 				width: 100%;
 				margin: 2% 0;
@@ -1330,20 +1338,19 @@ body{
 			float:right;
 			
 			@media (max-width: 1400px) {
-				width: 30%;
+         	    width: 30%;
 			}
-			 @media (max-width: 1024px) {					 	
-              width: 40%;       
+			@media (max-width: 1024px) {					 	
+                width: 40%;       
 			}
-
-      		 @media (max-width: 768px) {					 	
-                   width: 50%;
+      		@media (max-width: 768px) {					 	
+                width: 50%;
 					 }
-					 @media (max-width: 414px) {
-					 	width: 100%;
-					 	margin: 2% auto;
-					 	float:none;
-			          padding:0;
+			 @media (max-width: 414px) {
+				width: 100%;
+				margin: 2% auto;
+			    float:none;
+			    padding:0;
 					 }
 		}
 		&__social{

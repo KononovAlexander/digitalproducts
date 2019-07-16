@@ -871,7 +871,7 @@ body {
         margin: 1% 0; } }
   .works__slider {
     margin: 0 auto;
-    width: 65%;
+    width: 60%;
     height: 60%;
     padding: 0; }
     @media (max-width: 1400px) {
@@ -889,7 +889,7 @@ body {
         height: 65%; } }
   .works__slide img {
     height: 75rem;
-    width: 110rem; }
+    width: 100rem; }
     @media (max-width: 1400px) {
       .works__slide img {
         height: 50rem;
@@ -916,7 +916,7 @@ body {
     transition: 0.1s 0.5s linear; }
     @media (max-width: 1400px) {
       .works__btn {
-        height: 6%;
+        width: 15%;
         margin: 9% auto 0; } }
     @media (max-width: 1024px) {
       .works__btn {
@@ -945,8 +945,12 @@ body {
       -o-transition: 0.1s 0.5s linear;
       transition: 0.1s 0.5s linear; }
       .works__btn a span {
-        line-height: 4rem;
+        font-size: 2.5rem;
+        line-height: 5rem;
         vertical-align: middle; }
+        @media (max-width: 1300px) {
+          .works__btn a span {
+            font-size: 2rem; } }
         @media (max-width: 640px) {
           .works__btn a span {
             line-height: 2rem; } }
@@ -1200,9 +1204,6 @@ body {
     background-color: #9f9acf;
     padding: 4% 0;
     margin-bottom: 0; }
-    .ourTeam__socials a {
-      outline: none;
-      text-decoration: none; }
     .ourTeam__socials li {
       display: inline-block;
       height: 40px;
@@ -1229,6 +1230,9 @@ body {
         width: 140%;
         height: 140%;
         margin: 0 auto; }
+      .ourTeam__socials li a {
+        outline: none;
+        text-decoration: none; }
   .ourTeam__arrow {
     height: 50px;
     width: 50px;
@@ -1394,6 +1398,7 @@ body {
   .contacts__message {
     font-family: "PT Sans", sans-serif;
     font-style: italic;
+    padding: 2%;
     height: 60%;
     width: 100%;
     margin: 2% 0;
